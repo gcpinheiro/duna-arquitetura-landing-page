@@ -1,7 +1,7 @@
 const message = 'Olá! Gostaria de conversar sobre um projeto com a Duna Arquitetura.';
 export const SITE = {
   name: 'Duna Arquitetura',
-  architect: 'Thais Franco',
+  architect: 'Taís Franco',
   email: 'contato.dunaarq@gmail.com',
   instagram: 'https://www.instagram.com/duna.arqui/',
   instagramLabel: '@duna.arqui',

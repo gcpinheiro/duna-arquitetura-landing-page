@@ -12,12 +12,11 @@ def crop(page,box,name,width=1600):
     im=im.crop(tuple(round(v*(w if i%2==0 else h)) for i,v in enumerate(box)))
     im.thumbnail((width,2000))
     im.save(f'public/images/{name}.webp',quality=86)
-for page,name in [(14,'cozinha-atlantica'),(17,'casa-zahy'),(26,'casa-ambar'),(11,'quarto-contemporaneo'),(23,'escritorio'),(34,'residencia')]:
+for page,name in [(14,'cozinha-atlantica'),(17,'casa-zahy'),(21,'estudio-sampa'),(11,'quarto-contemporaneo'),(23,'escritorio'),(34,'residencia')]:
     crop(page,(0.005,.012,.735,.985),name)
-crop(2,(.06,.11,.371,.897),'thais-franco',750)
+crop(2,(.06,.11,.371,.897),'tais-franco',750)
 crop(16,(.005,.012,.985,.985),'cozinha-atlantica-2')
 crop(19,(.005,.012,.49,.985),'casa-zahy-2')
-crop(27,(.005,.012,.985,.985),'casa-ambar-2')
 files=list(Path('../02. Marca d_agua/01. Colorido').glob('*.png'))
 thumbs=[]
 for i,p in enumerate(files):

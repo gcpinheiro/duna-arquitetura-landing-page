@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     type: 'Reforma · Visualização arquitetônica',
     description:
       'Uma residência antiga ganha um novo olhar como hospedagem de curta duração. Materiais naturais e integração com a paisagem orientam uma proposta voltada ao conforto e ao bem-estar.',
-    source: 'Portfólio de Thais Franco · projeto 04 · páginas 17–20.',
+    source: 'Portfólio de Taís Franco · projeto 04 · páginas 17–20.',
     images: [
       {
         src: '/images/casa-zahy.webp',
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     type: 'Interiores · Visualização arquitetônica',
     description:
       'Texturas minerais, madeira e tons profundos se encontram em um ambiente de convivência. A composição evidencia os materiais, a iluminação e a relação com o verde.',
-    source: 'Portfólio de Thais Franco · projeto 03 · páginas 14–16.',
+    source: 'Portfólio de Taís Franco · projeto 03 · páginas 14–16.',
     images: [
       {
         src: '/images/cozinha-atlantica.webp',
@@ -39,21 +39,17 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    id: 'ambar',
-    title: 'Casa Âmbar',
+    id: 'sampa',
+    title: 'Estúdio Sampa',
     category: 'Residencial',
     type: 'Residencial · Visualização arquitetônica',
     description:
-      'Uma paleta quente e materiais naturais dão unidade a ambientes amplos. Madeira, iluminação e elementos de destaque compõem espaços de encontro e acolhimento.',
-    source: 'Portfólio de Thais Franco · projeto 07 · páginas 26–28.',
+      'Um estúdio compacto pensado para locação de curta duração. Tons escuros, iluminação cênica e materiais aconchegantes compõem uma experiência urbana sofisticada em um espaço reduzido.',
+    source: 'Portfólio de Taís Franco · projeto 05 · páginas 21–22 (Sampa Studio).',
     images: [
       {
-        src: '/images/casa-ambar.webp',
-        alt: 'Visualização da sala de jantar da Casa Âmbar com cadeiras azuis e marcenaria em madeira',
-      },
-      {
-        src: '/images/casa-ambar-2.webp',
-        alt: 'Visualização dos ambientes integrados de estar e jantar da Casa Âmbar',
+        src: '/images/estudio-sampa.webp',
+        alt: 'Visualização do Estúdio Sampa com sofá cinza, almofadas em terracota e uma ampla janela com persianas',
       },
     ],
   },
@@ -64,7 +60,7 @@ export const PROJECTS: Project[] = [
     type: 'Interiores · Visualização arquitetônica',
     description:
       'Tons profundos, iluminação indireta e texturas naturais criam uma atmosfera introspectiva. Um olhar contemporâneo para um ambiente confortável e acolhedor.',
-    source: 'Portfólio de Thais Franco · projeto 02 · páginas 11–13. Título descritivo para a web.',
+    source: 'Portfólio de Taís Franco · projeto 02 · páginas 11–13. Título descritivo para a web.',
     images: [
       {
         src: '/images/quarto-contemporaneo.webp',
