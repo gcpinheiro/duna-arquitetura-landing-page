@@ -1,0 +1,23 @@
+<header class="site-header">
+  <a href="#inicio" class="brand" aria-label="Duna Arquitetura — início" (click)="closeMenu()"
+    ><img src="/brand/logo.png" width="500" height="179" alt="Duna — lar é onde se começa" /><span
+      >ARQUITETURA</span
+    ></a
+  >
+  <button
+    class="menu-toggle"
+    type="button"
+    (click)="menuOpen.set(!menuOpen())"
+    [attr.aria-expanded]="menuOpen()"
+    aria-controls="navigation"
+    [attr.aria-label]="menuOpen() ? 'Fechar menu' : 'Abrir menu'"
+  >
+    <app-icon [name]="menuOpen() ? 'close' : 'menu'" />
+  </button>
+  <nav id="navigation" aria-label="Navegação principal" [class.open]="menuOpen()">
+    <a href="#sobre" (click)="closeMenu()">A Duna</a>
+    <a href="#projetos" (click)="closeMenu()">Projetos</a>
+    <a href="#atuacao" (click)="closeMenu()">Atuação</a>
+    <a class="nav-contact" href="#contato" (click)="closeMenu()">Vamos conversar <app-icon /></a>
+  </nav>
+</header>
