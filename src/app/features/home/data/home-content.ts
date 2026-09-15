@@ -69,6 +69,24 @@ export const PROJECTS: Project[] = [
     ],
   },
 ];
+export const AUDIENCES: ReadonlyArray<{ number: string; title: string; text: string }> = [
+  {
+    number: '01',
+    title: 'Investidores',
+    text: 'Quem compra studio para alugar por temporada e quer um imóvel que se destaque e valorize.',
+  },
+  {
+    number: '02',
+    title: 'Primeiro imóvel',
+    text: 'Jovens profissionais que querem aproveitar cada metro do primeiro apartamento.',
+  },
+  {
+    number: '03',
+    title: 'Incorporadoras',
+    text: 'Parcerias para apartamento decorado e padrão de acabamento de studios na planta.',
+  },
+];
+
 export const SERVICES = [
   {
     number: '01',

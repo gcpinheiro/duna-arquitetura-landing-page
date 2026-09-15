@@ -50,3 +50,5 @@ Não há formulário, rastreamento, credenciais, integrações de envio ou servi
 ## Validação realizada
 
 Build de produção com pré-renderização; dois testes Angular e três testes Playwright aprovados. Verificados filtros, navegação por setas, fechamento por Escape, restauração de foco, menu móvel, gesto de toque simulado e conteúdo sem JavaScript. Imagens, fonte, favicon e destinos dos contatos conferidos. Sem rolagem horizontal em 320, 390, 768, 1024 e 1440 px. Capturas desktop, mobile e galerias revisadas visualmente. O tom derivado #945640 complementa a terracota original para contraste de textos pequenos. A checagem de contatos valida o endereço configurado; não confirma recebimento de mensagens ou disponibilidade das contas.
+
+A seção Pra quem é aparece antes dos projetos e reutiliza a apresentação em três colunas de Possibilidades. Os públicos e textos foram fornecidos pelo usuário em 14/09/2026 e ficam em AUDIENCES, em src/app/features/home/data/home-content.ts.

@@ -1,7 +1,7 @@
 import { Hero } from './components/hero/hero';
 import { Component } from '@angular/core';
 import { SITE } from '../../core/config/site.config';
-import { SERVICES } from './data/home-content';
+import { AUDIENCES, SERVICES } from './data/home-content';
 import { Icon } from '../../shared/ui/icon';
 import { Portfolio } from './components/portfolio/portfolio';
 @Component({
@@ -13,4 +13,5 @@ import { Portfolio } from './components/portfolio/portfolio';
 export class HomePage {
   readonly site = SITE;
   readonly services = SERVICES;
+  readonly audiences = AUDIENCES;
 }
