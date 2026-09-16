@@ -9,7 +9,7 @@ import { Icon } from '../../../../shared/ui/icon';
   styleUrl: './portfolio.scss',
 })
 export class Portfolio implements OnDestroy {
-  readonly categories = ['Todos', 'Residencial', 'Interiores'] as const;
+  readonly categories = ['Todos', 'Estúdios', 'Residencial', 'Corporativo', 'Comercial'] as const;
   readonly category = signal<string>('Todos');
   readonly projects = computed(() =>
     PROJECTS.filter((p) => this.category() === 'Todos' || p.category === this.category()),

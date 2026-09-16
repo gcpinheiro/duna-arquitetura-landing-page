@@ -1,70 +1,122 @@
 import { Project } from '../../../shared/models/project.model';
 export const PROJECTS: Project[] = [
   {
+    id: 'sampa',
+    title: 'Estúdio Sampa',
+    category: 'Estúdios',
+    type: 'Estúdio · Interiores',
+    description:
+      'Tons profundos, iluminação cênica e materiais aconchegantes definem um estúdio compacto de atmosfera urbana.',
+    source: 'Imagem e identificação fornecidas pela Duna Arquitetura.',
+    images: [
+      {
+        src: '/images/projetos/estudio-sampa.webp',
+        alt: 'Estúdio Sampa com cama, tons escuros, iluminação cênica e ampla janela',
+      },
+    ],
+  },
+  {
+    id: 'quarto-contemporaneo',
+    title: 'Quarto Contemporâneo',
+    category: 'Estúdios',
+    type: 'Estúdio · Interiores',
+    description:
+      'Um ambiente compacto que integra descanso e trabalho por meio de marcenaria, tons sóbrios e iluminação pontual.',
+    source: 'Imagem e identificação fornecidas pela Duna Arquitetura.',
+    images: [
+      {
+        src: '/images/projetos/quarto-contemporaneo.webp',
+        alt: 'Quarto Contemporâneo com cama, bancada de trabalho e parede em tom verde profundo',
+      },
+    ],
+  },
+  {
+    id: 'nectar',
+    title: 'Estúdio Nectar',
+    category: 'Estúdios',
+    type: 'Estúdio · Interiores',
+    description:
+      'Marcenaria clara e iluminação indireta organizam um espaço compacto pensado para aproveitar cada metro.',
+    source: 'Imagem e identificação fornecidas pela Duna Arquitetura.',
+    images: [
+      {
+        src: '/images/projetos/estudio-nectar.webp',
+        alt: 'Estúdio Nectar com cama, bancada integrada, marcenaria clara e iluminação indireta',
+      },
+    ],
+  },
+  {
     id: 'zahy',
     title: 'Casa Zahy Herdades',
     category: 'Residencial',
-    type: 'Reforma · Visualização arquitetônica',
+    type: 'Residencial · Arquitetura',
     description:
-      'Uma residência antiga ganha um novo olhar como hospedagem de curta duração. Materiais naturais e integração com a paisagem orientam uma proposta voltada ao conforto e ao bem-estar.',
-    source: 'Portfólio de Taís Franco · projeto 04 · páginas 17–20.',
+      'Pedra, madeira e paisagismo se encontram em uma residência integrada à paisagem e voltada ao acolhimento.',
+    source: 'Imagem e identificação fornecidas pela Duna Arquitetura.',
     images: [
       {
-        src: '/images/casa-zahy.webp',
-        alt: 'Visualização da Casa Zahy Herdades com fachada de pedra, pergolado de madeira e jardim',
-      },
-      {
-        src: '/images/casa-zahy-2.webp',
-        alt: 'Ambiente interno da Casa Zahy Herdades com madeira e materiais naturais',
+        src: '/images/projetos/casa-zahy-herdades.webp',
+        alt: 'Casa Zahy Herdades com fachada de pedra, pergolado de madeira e jardim',
       },
     ],
   },
   {
-    id: 'atlantica',
+    id: 'cozinha-atlantica',
     title: 'Cozinha Atlântica',
-    category: 'Interiores',
-    type: 'Interiores · Visualização arquitetônica',
-    description:
-      'Texturas minerais, madeira e tons profundos se encontram em um ambiente de convivência. A composição evidencia os materiais, a iluminação e a relação com o verde.',
-    source: 'Portfólio de Taís Franco · projeto 03 · páginas 14–16.',
-    images: [
-      {
-        src: '/images/cozinha-atlantica.webp',
-        alt: 'Visualização da Cozinha Atlântica com ilha verde, marcenaria de madeira e jardim vertical',
-      },
-      {
-        src: '/images/cozinha-atlantica-2.webp',
-        alt: 'Vista da Cozinha Atlântica em direção ao jardim e à área de refeições',
-      },
-    ],
-  },
-  {
-    id: 'sampa',
-    title: 'Estúdio Sampa',
     category: 'Residencial',
-    type: 'Residencial · Visualização arquitetônica',
+    type: 'Residencial · Interiores',
     description:
-      'Um estúdio compacto pensado para locação de curta duração. Tons escuros, iluminação cênica e materiais aconchegantes compõem uma experiência urbana sofisticada em um espaço reduzido.',
-    source: 'Portfólio de Taís Franco · projeto 05 · páginas 21–22 (Sampa Studio).',
+      'Texturas minerais, madeira e tons profundos compõem uma cozinha de convivência conectada ao verde.',
+    source: 'Imagem e identificação fornecidas pela Duna Arquitetura.',
     images: [
       {
-        src: '/images/estudio-sampa.webp',
-        alt: 'Visualização do Estúdio Sampa com sofá cinza, almofadas em terracota e uma ampla janela com persianas',
+        src: '/images/projetos/cozinha-atlantica.webp',
+        alt: 'Cozinha Atlântica com ilha verde, marcenaria de madeira e jardim vertical',
       },
     ],
   },
   {
-    id: 'quarto',
-    title: 'Quarto contemporâneo',
-    category: 'Interiores',
-    type: 'Interiores · Visualização arquitetônica',
+    id: 'frame-office',
+    title: 'Frame Office',
+    category: 'Corporativo',
+    type: 'Corporativo · Interiores',
     description:
-      'Tons profundos, iluminação indireta e texturas naturais criam uma atmosfera introspectiva. Um olhar contemporâneo para um ambiente confortável e acolhedor.',
-    source: 'Portfólio de Taís Franco · projeto 02 · páginas 11–13. Título descritivo para a web.',
+      'Um ambiente de trabalho contemporâneo organizado pela luz natural, por linhas limpas e por uma paleta sóbria.',
+    source: 'Imagem e identificação fornecidas pela Duna Arquitetura.',
     images: [
       {
-        src: '/images/quarto-contemporaneo.webp',
-        alt: 'Visualização de quarto com tons escuros, iluminação indireta e cabeceira estofada',
+        src: '/images/projetos/frame-office.webp',
+        alt: 'Frame Office com mesas de trabalho, cadeiras claras, estantes e ampla janela',
+      },
+    ],
+  },
+  {
+    id: 'base-lounge',
+    title: 'Base Lounge',
+    category: 'Corporativo',
+    type: 'Corporativo · Interiores',
+    description:
+      'Uma área de convivência flexível com pontos de apoio, assentos informais e elementos de cor.',
+    source: 'Imagem fornecida pela Duna Arquitetura; nome final informado pelo usuário.',
+    images: [
+      {
+        src: '/images/projetos/base-lounge.webp',
+        alt: 'Base Lounge com pufes cinza, bancada, armários em terracota e iluminação sobre trilhos',
+      },
+    ],
+  },
+  {
+    id: 'boteco-faustino',
+    title: 'Boteco Faustino',
+    category: 'Comercial',
+    type: 'Comercial · Interiores',
+    description:
+      'Um ponto comercial aberto e convidativo, com balcão central, cores marcantes e integração com a circulação.',
+    source: 'Imagem e identificação fornecidas pela Duna Arquitetura.',
+    images: [
+      {
+        src: '/images/projetos/boteco-faustino.webp',
+        alt: 'Boteco Faustino com balcão verde e terracota em uma galeria comercial',
       },
     ],
   },
@@ -90,20 +142,22 @@ export const AUDIENCES: ReadonlyArray<{ number: string; title: string; text: str
 export const SERVICES = [
   {
     number: '01',
-    title: 'Arquitetura residencial',
-    text: 'Para quem deseja repensar a forma de morar. Projetos que conectam espaços, luz natural e materiais à vida cotidiana.',
-    detail: 'Novas residências e projetos de reforma.',
+    title: 'Projeto de interiores completo para studios',
+    text: 'Do conceito ao detalhamento técnico, pensado para maximizar cada metro quadrado.',
   },
   {
     number: '02',
-    title: 'Arquitetura de interiores',
-    text: 'Para transformar a experiência de um ambiente. Layout, materialidade e iluminação em uma composição funcional e acolhedora.',
-    detail: 'Ambientes residenciais e espaços de trabalho.',
+    title: 'Otimização de espaço e marcenaria sob medida',
+    text: 'Soluções modulares e multifuncionais — essenciais em espaços compactos.',
   },
   {
     number: '03',
-    title: 'Visualização arquitetônica',
-    text: 'Para enxergar as possibilidades de um projeto. Imagens que comunicam atmosferas, volumes e escolhas de materiais.',
-    detail: 'Representação visual de arquitetura e interiores.',
+    title: 'Acompanhamento de execução',
+    text: 'Compatibilização técnica e acompanhamento até a entrega, sem surpresa de obra.',
+  },
+  {
+    number: '04',
+    title: 'Consultoria para incorporadoras',
+    text: 'Decoração de apartamento modelo e padronização de studios para lançamentos.',
   },
 ];

@@ -12,7 +12,7 @@
       <h2 id="audience-title">Pra quem <span>é.</span></h2>
     </div>
   </div>
-  <div class="services">
+  <div class="services audience-services">
     @for (audience of audiences; track audience.number) {
       <article class="service audience-card">
         <span class="service-number">{{ audience.number }}</span>
@@ -40,6 +40,28 @@
   <app-portfolio />
 </section>
 
+<section id="atuacao" class="container section-space services-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">03 / ÁREAS DE ATUAÇÃO</p>
+      <h2>O que eu <span>faço.</span></h2>
+    </div>
+  </div>
+  <div class="services practice-services">
+    @for (service of services; track service.number) {
+      <article class="service">
+        <span class="service-number">{{ service.number }}</span>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.text }}</p>
+        <a href="#contato" [attr.aria-label]="'Conversar sobre ' + service.title"><app-icon /></a>
+      </article>
+    }
+  </div>
+  <p class="scope-note">
+    As entregas e os limites de cada trabalho são definidos de acordo com o escopo da contratação.
+  </p>
+</section>
+
 <section id="sobre" class="about-section">
   <div class="container about-grid">
     <div class="portrait-wrap">
@@ -54,7 +76,7 @@
       <div class="portrait-label"><span>TAÍS FRANCO</span><small>Arquiteta e urbanista</small></div>
     </div>
     <div class="about-copy">
-      <p class="eyebrow">03 / A ESSÊNCIA DA DUNA</p>
+      <p class="eyebrow">04 / A ESSÊNCIA DA DUNA</p>
       <h2>Antes do espaço,<br />vem o <span>olhar.</span></h2>
       <p class="intro">Uma arquitetura que acolhe, traduz e aproxima.</p>
       <p>
@@ -82,30 +104,6 @@
       loading="lazy"
     />
   </div>
-</section>
-
-<section id="atuacao" class="container section-space services-section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">04 / POSSIBILIDADES</p>
-      <h2>Um olhar completo.<br />Na sua <span>escala.</span></h2>
-    </div>
-    <p>Da relação com a paisagem<br />ao detalhe que faz a diferença.</p>
-  </div>
-  <div class="services">
-    @for (service of services; track service.number) {
-      <article class="service">
-        <span class="service-number">{{ service.number }}</span>
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.text }}</p>
-        <small>{{ service.detail }}</small
-        ><a href="#contato" [attr.aria-label]="'Conversar sobre ' + service.title"><app-icon /></a>
-      </article>
-    }
-  </div>
-  <p class="scope-note">
-    As entregas e os limites de cada trabalho são definidos de acordo com o escopo da contratação.
-  </p>
 </section>
 
 <section class="statement">

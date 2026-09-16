@@ -7,29 +7,31 @@ test('desktop: assets, filters, gallery navigation, focus and contact links', as
   await page.goto('/');
   await expect(page.locator('h1')).toContainText('Pertencer.');
   await page.evaluate(() => document.fonts.ready);
-  await expect(page.locator('.project-card')).toHaveCount(4);
+  await expect(page.locator('.project-card')).toHaveCount(8);
+  await page.getByRole('button', { name: 'Estúdios', exact: true }).click();
+  await expect(page.locator('.project-card')).toHaveCount(3);
   await page.getByRole('button', { name: 'Residencial', exact: true }).click();
   await expect(page.locator('.project-card')).toHaveCount(2);
-  await page.getByRole('button', { name: 'Interiores', exact: true }).click();
+  await page.getByRole('button', { name: 'Corporativo', exact: true }).click();
   await expect(page.locator('.project-card')).toHaveCount(2);
+  await page.getByRole('button', { name: 'Comercial', exact: true }).click();
+  await expect(page.locator('.project-card')).toHaveCount(1);
   await page.getByRole('button', { name: 'Todos', exact: true }).click();
   const project = page.getByRole('button', { name: 'Ver projeto Casa Zahy Herdades' });
   await project.click();
   await expect(page.getByRole('dialog')).toBeVisible();
-  await expect(page.locator('.gallery-image img')).toHaveAttribute('src', '/images/casa-zahy.webp');
-  await page.keyboard.press('ArrowRight');
   await expect(page.locator('.gallery-image img')).toHaveAttribute(
     'src',
-    '/images/casa-zahy-2.webp',
+    '/images/projetos/casa-zahy-herdades.webp',
   );
-  await page.keyboard.press('ArrowLeft');
-  await expect(page.locator('.gallery-image img')).toHaveAttribute('src', '/images/casa-zahy.webp');
+  await expect(page.getByRole('button', { name: 'Imagem anterior' })).toBeDisabled();
+  await expect(page.getByRole('button', { name: 'Próxima imagem' })).toBeDisabled();
   await page.screenshot({ path: 'tmp/qa/gallery-desktop.png' });
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).not.toBeVisible();
   await expect(project).toBeFocused();
   await expect(page.locator('body')).not.toHaveCSS('overflow', 'hidden');
-  for (const id of ['inicio', 'sobre', 'projetos', 'atuacao', 'contato'])
+  for (const id of ['inicio', 'pra-quem-e', 'sobre', 'projetos', 'atuacao', 'contato'])
     await expect(page.locator(`#${id}`)).toHaveCount(1);
   for (const link of await page.locator('a[href*="wa.me"]').all()) {
     expect(await link.getAttribute('href')).toMatch(/wa.me\/5585(997173960|998069699)\?text=/);
@@ -70,23 +72,9 @@ test('mobile: menu, dismissal, touch gallery and responsive layout', async ({ pa
   await expect(page.getByRole('navigation')).not.toBeVisible();
   const project = page.getByRole('button', { name: 'Ver projeto Cozinha Atlântica' });
   await project.click();
-  await page.locator('.gallery-image').evaluate((el) => {
-    el.dispatchEvent(
-      new TouchEvent('touchstart', {
-        bubbles: true,
-        changedTouches: [new Touch({ identifier: 0, target: el, clientX: 300 })],
-      }),
-    );
-    el.dispatchEvent(
-      new TouchEvent('touchend', {
-        bubbles: true,
-        changedTouches: [new Touch({ identifier: 0, target: el, clientX: 100 })],
-      }),
-    );
-  });
   await expect(page.locator('.gallery-image img')).toHaveAttribute(
     'src',
-    '/images/cozinha-atlantica-2.webp',
+    '/images/projetos/cozinha-atlantica.webp',
   );
   await page.screenshot({ path: 'tmp/qa/gallery-mobile.png' });
   await page.getByRole('button', { name: 'Fechar galeria' }).click();
@@ -111,7 +99,7 @@ test('prerendered content remains visible without JavaScript', async ({ browser 
   const page = await context.newPage();
   await page.goto('http://127.0.0.1:4203/');
   await expect(page.locator('h1')).toBeVisible();
-  await expect(page.locator('.project-card')).toHaveCount(4);
+  await expect(page.locator('.project-card')).toHaveCount(8);
   await expect(page.locator('#contato')).toContainText('contato.dunaarq@gmail.com');
   await context.close();
 });

@@ -85,9 +85,14 @@
 }
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+.audience-services {
+  grid-template-columns: repeat(3, 1fr);
+}
+.practice-services {
+  grid-template-columns: repeat(4, 1fr);
 }
 .service {
   position: relative;
@@ -111,12 +116,7 @@
 .service p {
   font-size: 13px;
   line-height: 1.9;
-}
-.service small {
-  font-size: 11px;
-  line-height: 1.8;
-  display: block;
-  margin: 22px 0 55px;
+  margin-bottom: 55px;
   max-width: 260px;
 }
 .service a {
@@ -272,9 +272,6 @@
     max-width: none;
     margin: 17px 0;
     font-size: 24px;
-  }
-  .service small {
-    margin-bottom: 10px;
   }
   .service a {
     right: 0;
