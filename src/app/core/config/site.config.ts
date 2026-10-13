@@ -5,11 +5,11 @@ export const SITE = {
   email: 'contato.dunaarq@gmail.com',
   instagram: 'https://www.instagram.com/duna.arqui/',
   instagramLabel: '@duna.arqui',
-  whatsapp: `https://wa.me/5585997173960?text=${encodeURIComponent(message)}`,
+  whatsapp: `https://wa.me/5511990145190?text=${encodeURIComponent(message)}`,
   phones: [
     {
       label: '(85) 99717-3960',
-      href: `https://wa.me/5585997173960?text=${encodeURIComponent(message)}`,
+      href: `https://wa.me/5511990145190?text=${encodeURIComponent(message)}`,
     },
     {
       label: '(85) 99806-9699',

@@ -21,7 +21,7 @@ describe('App', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     const contact = compiled.querySelector<HTMLAnchorElement>('.floating-contact')!;
-    expect(contact.href).toContain('wa.me/5585997173960');
+    expect(contact.href).toContain('wa.me/5511990145190');
     expect(decodeURIComponent(contact.href)).toContain('Duna Arquitetura');
   });
 });
